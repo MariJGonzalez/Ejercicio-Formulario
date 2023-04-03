@@ -1,6 +1,7 @@
 # Ejercicio-Formulario
-Ejercicio en html de creación de un formulario
-Enunciado del ejercicio realizado:
+Ejercicio en html de creación de un formulario, pedido en un curso.
+
+El enunciado del ejercicio es el siguiente:
 Realiza un sitio web que contenga las siguientes etiquetas:
 El título de la página debe ser “Formulario de Curso Web“.
 El método de envío del formulario debe ser GET.
