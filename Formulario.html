@@ -11,19 +11,20 @@
             <p> 
                 <label for="nombre">Nombre:</label>
                 <!-- tipo texto, obligatorio, autofoco, tamaño 30 y longitud máxima de 20.-->
-                <input autofocus type="text" id="nombre" name="nombre" maxlength="20" size="30" required> 
+                <input autofocus type="text" id="nombre" name="nombre" maxlength="20" size="30" placeholder="Escriba su nombre" required> 
+                
             </p>
         
             <p>
                 <!-- tipo email, debe ser obligatorio-->    
                 <label for="correo">email:</label>
-                <input type="email" id="correo" name="correo" required>   
+                <input type="email" id="correo" name="correo" placeholder="Escriba su email" required>   
             </p>
         
             <p>
                 <!-- tipo password, longitud máxima de 8-->
                 <label for="contraseña">Contraseña:</label>
-                <input type="password" id="contraseña" name="contraseña" maxlength="8">  
+                <input type="password" id="contraseña" name="contraseña" maxlength="8" placeholder="Escriba su contraseña">  
             </p>
         
             <p>
@@ -109,13 +110,12 @@
                 <br><input type="checkbox" id="b3t7" name="b3t7" >B3T7
                 <br><input type="checkbox" id="b3t8" name="b3t8" >B3T8
                 <br><input type="checkbox" id="b2t4" name="b2t4" checked>B2T4
-                
-            </p>
+            </p>  
             
-            <p>  
+            <p>
                 <!--lista desplegable-->
                 <label>Tema favorito:</label>
-                <select id="tema-favorito" name="tema-favorito">     
+                <select id="temafavorito" name="tema-favorito">     
                     <option selected>Seleccione un tema:</option> <!--seleccionada inicialmente-->
                     <optgroup label="Bloque 1">           <!--optgroup para submenús-->
                         <option value="B1T1">B1T1</option>
@@ -138,12 +138,13 @@
                 </select>
             </p>
             
-            <p>
+            <p class="observaciones" hidden>
                 <!-- tipo área de texto con 30 filas y 20 columnas-->
                 <label>Observaciones:</label>
                 <textarea cols="20" rows="30"></textarea>
+                
             </p>
-
+            
             <p>
                 <!-- botón de reset etiquetado como LIMPIAR-->
                 <button type="reset" id="limpiar" name="limpiar">LIMPIAR</button>
