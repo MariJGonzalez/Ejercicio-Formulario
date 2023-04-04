@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <!--  título de la página debe ser “Formulario de Curso Web“-->
         <title>Formulario del Curso Web</title>
+        <script type="text/javascript" src="script.js"></script>
     </head>
     <body>
         <!-- método de envío del formulario debe ser GET, destino del envío del formulario debe ser “”-->
@@ -138,13 +139,27 @@
                 </select>
             </p>
             
-            <p class="observaciones" hidden>
-                <!-- tipo área de texto con 30 filas y 20 columnas-->
+            <section class="observaciones" id="observaciones">
+
+                <!-- onclick hace una llamada a la función java "observaciones" cuando es clicado-->
+                <button type="button" onclick="observaciones()">Ver observaciones</button> 
+                
+                <p>
+                <!-- probando para que se ejecute la función directamente, sin tener que clicar-->
+                    <h2>Programado directamente en java usando html</h2>
+                   
+                <!-- *** Ejecuta la función "observaciones" directamente *** -->
+                    <script> observaciones()</script>
+                
+                <!-- tipo área de texto con 30 filas y 20 columnas (esto se ha copiado dentro de la función js)
                 <label>Observaciones:</label>
                 <textarea cols="20" rows="30"></textarea>
-                
-            </p>
-            
+                -->
+                <!-- No funcionan  **** <p onload="observaciones()"></p> 
+                        *** <a href="observaciones()">Llamar función</a> -->
+                </p>
+            </section>
+                     
             <p>
                 <!-- botón de reset etiquetado como LIMPIAR-->
                 <button type="reset" id="limpiar" name="limpiar">LIMPIAR</button>
